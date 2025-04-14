@@ -6,6 +6,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.math.BigDecimal;
+import java.sql.Date;
+
 @Setter
 @Data
 @Entity
@@ -18,31 +21,17 @@ public class Product {
     private int id;
     private String name;
     private String description;
+    private String brand;
+    private BigDecimal price;
+    private String category;
+
+    private Date releaseDate;
+    private boolean productAvailable;
+    private int stockQuantity;
 
     private String imageName;
-    private String imagetype;
+    private String imageType;
     @Lob
-    private byte[] imageData;
-
-    private double price;
-    private int quantity;
-    private String category;
-    private String brand;
-    private String color;
-    private String size;
-    private String material;
-    private String warranty;
-    private String careInstructions;
-    private String returnPolicy;
-    private String shippingDetails;
-    private String customerReviews;
-    private String ratings;
-    private String availability;
-    private String discount;
-    private String tags;
-    private String specifications;
-    private String additionalInfo;
-    private String relatedProducts;
-    private String sellerInfo;
+    private byte[] imageDate;
 
 }
