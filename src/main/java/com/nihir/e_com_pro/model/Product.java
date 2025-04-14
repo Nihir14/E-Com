@@ -4,12 +4,10 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 import java.math.BigDecimal;
 import java.sql.Date;
 
-@Setter
 @Data
 @Entity
 @AllArgsConstructor
@@ -32,6 +30,6 @@ public class Product {
     private String imageName;
     private String imageType;
     @Lob
-    private byte[] imageDate;
+    private byte[] imageData;
 
 }
